@@ -1,0 +1,252 @@
+body, h1, p {
+    font-family: "Oswald", sans-serif;
+    text-shadow: -3px 3px 6px rgba(0, 0, 0, 1);
+}
+body, html {
+    height: 100%
+}
+section[class^='bgimg']{
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bgimg1 {
+    background-image: url('../images/inicioDesktop/hinchadasur.jpg');
+}
+.bgimg2 {
+    background-image: url('../images/inicioDesktop/salida.jpg');
+}
+.bgimg3 {
+    background-image: url('../images/inicioDesktop/armani.jpg');
+}
+.bgimg4 {
+    background-image: url('../images/mejiaCopaLibertadores.jpg');
+}
+.bgimgCopaLibertadores {
+    background-image: url('../images/proximoPartido/copaLibertadores.jpg');
+}
+.bgimgCopaSudamericana {
+    background-image: url('../images/proximoPartido/copaSudamericana.jpg');
+}
+.bgimgLigaAguila {
+    background-image: url('../images/proximoPartido/ligaAguila.jpg');
+}
+.bgimgCopaAguila {
+    background-image: url('../images/proximoPartido/copaAguila.jpg');
+}
+.bgimgInicioApp {
+    background-image: url('../images/inicioApp/campeon.jpg');
+}
+.bgimgProximoPartido{
+    background-image: url('../images/inicioApp/banderaLDS.jpg');
+}
+.bgimgResultados{
+    background-image: url('../images/inicioApp/hincha.jpg');
+}
+.bgimgTablaPosiciones{
+    background-image: url('../images/inicioApp/celebracion.jpg');
+}
+.bgimgVideoGoles{
+    background-image: url('../images/inicioApp/porteroGol.jpg');
+}
+.bgimgBoletería {
+    background-image: url('../images/inicioApp/surFinalLibertadores.jpg');
+}
+.bgimgLesionados{
+    background-image: url('../images/inicioApp/lesionados.jpg');
+}
+.bgimgProximoPartidoCopaLibertadores{
+    background-image: url('../images/proximoPartido/LevantandoCopa.jpg');
+}
+.bgimgProximoPartidoCopaSudamericana {
+    background-image: url('../images/proximoPartido/Sin título.jpg');
+}
+.bgimgProximoPartidoLigaAguila {
+    background-image: url('../images/proximoPartido/tribuna2.jpg');
+}
+.bgimgProximoPartidoCopaAguila {
+    background-image: url('../images/proximoPartido/tribuna1.jpg');
+}
+.pagesInfo {
+    background: #ebeff2;
+}
+a {
+	text-decoration: none;	
+}
+.imgAPP {
+	width: 25%;
+}
+.iconUp, .iconDown{
+    transition: .3s;
+}
+.iconUp:hover, .iconDown:hover{
+    animation: .5s animacion infinite;  
+}
+.goBack {
+    position: fixed;
+    z-index: 10;
+    margin: 10px 0 0 20px;
+    color: white;
+}
+.tituloPagina {
+    display: inline-block;
+    /*background: red;*/
+    padding: 10px 10px 10px 60px;
+    font-size: 29px;
+   
+}
+.panel {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    text-shadow: none;
+}
+.centerInPage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+}
+.pageBtnResultado{  
+    background-color:#ff9191!important;
+}
+.pageBtnVideoGol{ 
+    background-color:#ffff99!important;
+}
+.pageBtnProximo{ 
+    background-color:#c4ffc4!important;
+}
+.pageBtnVideoGol, .pageBtnResultado, .pageBtnProximo {
+    display: block;
+    color:#000!important;
+    padding: 5px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+.circle{
+    border-radius: 30%;
+    height: 50px;
+}
+@keyframes animacion {
+	0% {
+
+	}
+	50% {
+		transform: translateY(7px) rotate(2deg);
+	}
+	100% {
+		transform: translateY(0px)
+	}
+}
+
+/*Responsive desing para dispositivos móviles */
+@media screen and (max-width: 650px){
+
+    /*INICIO RESPONSIVE DESIGN INDEX*/
+    /*Correr botones de down y up */
+    div.w3-display-bottomleft {
+        left: 41% !important;
+    }
+    /*Acomodar el ancho de los botones*/
+    section#index3 p.w3-large.w3-center {
+        width: 50vh;
+    }
+    /*Cambiar tamaño del titulo principal*/
+    section#index1 h1{
+        text-align: center;
+        font-size: 75px !important;
+    }
+    /*Cambiar tamaño descripción de titulo principal*/
+    section#index1 p{
+        /*text-align: center;*/
+        font-size: 25px !important;
+    }
+    /*Cambiar tamaño del titulo de redes sociales*/
+    section#index3 h1 {
+        font-size: 45px !important;
+    }
+     /*Cambiar tamaño de las imagenes*/
+    section#index2 .imgAPP {
+        width: 90%;
+    }
+    /*Cambiar tamaño del titulo del index principal del APP*/
+    section#index2 h1 {
+        font-size: 45px !important;
+    }
+    /*FIN RESPONSIVE DESING INDEX*/
+
+    /*INCIO RESPONSIVE DESING INICIOAPP*/    
+    /*Cambiar tamaño de todos los titulos de incioApp*/
+    section[id^='inicioApp'] h1{
+        text-align: center;
+        font-size: 60px !important;
+    }
+    /*Cambiar tamaño de todas las descripciones del inicioApp*/
+    section[id^='inicioApp'] p{
+        font-size: 20px !important;
+    }
+    /*FIN RESPOSIVE DESING INICIOAPP*/
+
+    /*INCIO RESPONSIVE DESING PROXIMOPARTIDO*/
+    section[id^='proximoPartido'] h1{
+        text-align: center;
+        font-size: 60px !important;
+    }
+    /*Cambiar tamaño de todas las descripciones del inicioApp*/
+    section[id^='proximoPartido'] p{
+        font-size: 20px !important;
+    }
+     /*FIN RESPOSIVE DESING PROXIMOPARTIDO*/
+
+     /*INCIO RESPONSIVE DESING RESULTADO*/
+    section[id^='resultado'] h1, section[id^='tablaPosiciones'] h1{
+        text-align: center;
+        font-size: 60px !important;
+    }
+    /*Cambiar tamaño de todas las descripciones del inicioApp*/
+    section[id^='resultado'] p, section[id^='tablaPosiciones'] p{
+        font-size: 20px !important;
+    }
+     /*FIN RESPOSIVE DESING RESULTADO*/
+
+    /*INCIO RESPONSIVE DESING TABLA PRÓXIMOS PARTIDOS*/   
+    #tblProximoPartido {
+    width: 100%;
+
+    } 
+
+    #tblVs {
+        /*font-size: 30px;*/
+    }
+
+    #tblFecha {
+        /*font-size: 25px;*/
+    }
+
+    #tblImagenLocal, #tblImagenVisitante {
+        width: 105px;
+    }
+
+    #tblSubTabla {
+        margin: 0;
+    }
+
+    #tblDescripcion {
+        /*font-size: 21px ;*/
+    }
+
+    #tblEstadio {
+        /*font-size: 21px;*/
+    }
+
+    #tblHora {
+        /*font-size: 21px;*/
+    }
+    /*FIN RESPOSIVE DESING TABLA PRÓXIMOS PARTIDOS*/
+
+
+}
